@@ -1,0 +1,15 @@
+{
+  "name": "digital-clock",
+  "version": "1.0.0",
+  "description": "A simple international digital clock",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "stormax181iq",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.10",
+    "micromodal": "^0.4.10"
+  }
+}

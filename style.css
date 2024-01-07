@@ -1,0 +1,163 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  color: whitesmoke;
+  flex-direction: column;
+}
+
+#time {
+  font-size: 7rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+#timezone-display {
+  font-size: 1.5rem;
+  color: #eeeeee;
+}
+
+#date {
+  font-size: 1.5rem;
+}
+
+#clock-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#tz-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+#change-tz {
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+#change-tz:hover {
+  background-color: grey;
+}
+
+.fa-pen-to-square {
+  color: whitesmoke;
+}
+
+/* My own modal */
+#modal-1-content {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 1rem 0;
+}
+
+#pick-btn-wrapper {
+  display: flex;
+  grid-row: 1;
+  margin: 0 1rem;
+  border: 2px solid black;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  width: 80%;
+}
+
+#tz-pick {
+  background: none;
+  border: none;
+  border-radius: 1rem;
+}
+
+#tz-pick:hover {
+  background-color: lightgray;
+}
+
+#tz-apply {
+  grid-row: 1;
+  border-radius: 1rem;
+  background: none;
+}
+
+#tz-apply:hover {
+  background-color: lightgray;
+}
+
+.fa-chevron-down {
+  color: black;
+}
+
+#timezone-list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  border-radius: 1rem;
+  border: 1px solid black;
+  background-color: #fff;
+  margin-top: 0.1rem;
+  padding: 0.4rem;
+}
+
+.timezone-element {
+  min-width: 10rem;
+  background: none;
+  border: none;
+  padding: 0.3rem 0.3rem;
+  border-radius: 1rem;
+}
+
+.timezone-element:hover {
+  background-color: lightgray;
+}
+
+/* Micromodal Styles */
+.modal {
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background-color: #fff;
+  padding: 3rem;
+  max-width: 500px;
+  max-height: 100vh;
+  border-radius: 1rem;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-style: 1.25rem;
+  line-height: 1.25;
+  color: black;
+  box-sizing: border-box;
+}
